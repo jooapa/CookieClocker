@@ -1,0 +1,9 @@
+table, th, td {
+    border-style:outset;
+}
+#panel{
+    color: rgb(102, 102, 102);
+    display: none;
+    text-align: center;
+    font-size: 7px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body onload="onload()">
+    <script>
+        $(document).ready(function(){
+            $(".flip").hover(function(){
+                $("#panel").slideToggle(100);
+            });
+        });  
+    </script>
+    <table>
+        <tr>
+            <th id="CookieID"></th>
+            <th>Upgrades</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td><button onclick="bakeCookie()">Bake a Cookie</button></td>
+            <td class="flip"> <button onclick="upgradeID1()">Grandpa<txt id="grandpaID"></txt></button>
+                <div id="panel"><br>Bake +1 More cookies</div></td>
+            <td><txt id="grandpaCost"></txt></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="flip"> <button onclick="upgradeID2()">Bakery<txt id="bakeryID"></txt></button>
+                <div id="panel">Cookies 1.1x multiplier</div></td>
+            <td><txt id="grandpaCost"></txt></td>
+        </tr>
+    </table>
+    
+    
+    <script src="js.js"></script>
+</body>
+</html>
