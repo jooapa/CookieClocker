@@ -7,11 +7,20 @@
     <script defer src="code.js"></script>
     <title>Document</title>
     <style>
-    #gate {
-        cursor: pointer;
-        margin-bottom: 100px;
-        width: 83px;
-        height: 46px;
+    .pig {
+        position: relative;
+        width: 221px;
+        height: 180px;
+        margin: 0 auto;
+        top: 200px;
+        
+    }
+    .face {
+        width: 221px;
+        height: 180px;
+        position: absolute;
+        top: 26px;
+        left: 8px;
     }
 
     #cake {
@@ -22,7 +31,12 @@
     </style>
 </head>
 <body>
-    <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable">
+    <div class="pig">
+        <img src="pig.png" id="gate">
+        <div class="face">
+            <img src="mouth1.png" class="droppable" draggable="false">
+        </div>
+    </div>
 
     <img src="https://en.js.cx/clipart/ball.svg" id="cake" style="position: absolute; z-index: 1000; left: 0px; top: 0px;" >
 
