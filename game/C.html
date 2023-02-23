@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="code.js"></script>
+    <title>Document</title>
+    <style>
+    #gate {
+        cursor: pointer;
+        margin-bottom: 100px;
+        width: 83px;
+        height: 46px;
+    }
+
+    #cake {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable">
+
+    <img src="https://en.js.cx/clipart/ball.svg" id="cake" style="position: absolute; z-index: 1000; left: 0px; top: 0px;" >
+
+    <button onclick="addCake()">makecake</button>
+</body>
+</html>
