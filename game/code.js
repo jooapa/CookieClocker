@@ -3,12 +3,14 @@ var Inside = false;
 
 cake.onmousedown = function(event) {
     Inside = false;
-  let shiftX = event.clientX - cake.getBoundingClientRect().left;
-  let shiftY = event.clientY - cake.getBoundingClientRect().top;
+    let shiftX = event.clientX - cake.getBoundingClientRect().left;
+    let shiftY = event.clientY - cake.getBoundingClientRect().top;
+
+    var cakeBox = document.getElementById("cakeBox");
 
     cake.style.position = 'absolute';
     cake.style.zIndex = 1000;
-    document.body.append(cake);
+    cakeBox.append(cake);
 
     moveAt(event.pageX, event.pageY);
 
@@ -54,14 +56,14 @@ cake.onmousedown = function(event) {
     }
     document.removeEventListener('mousemove', onMouseMove);
     cake.onmouseup = null;
-    cake.style.top = 0 
-    cake.style.left = 0
+    cake.style.top = 0 + "px" 
+    cake.style.left = 100 + "px"
   };
 
 };
 
 function enterDroppable(elem, obj) {
-  elem.style.background = 'pink';
+  //elem.style.background = 'pink';
   
 }
 

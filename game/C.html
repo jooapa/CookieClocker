@@ -7,13 +7,21 @@
     <script defer src="code.js"></script>
     <title>Document</title>
     <style>
+    body{
+        /*reference.png as a backgroung*/
+        background-image: url("reference.png");
+        background-repeat: no-repeat;
+    }
+    .container {
+        position: relative;
+    }
     .pig {
         position: relative;
         width: 221px;
         height: 180px;
         margin: 0 auto;
-        top: 200px;
-        
+        top: 707px;
+        transform: scale(1.6);        
     }
     .face {
         width: 221px;
@@ -26,20 +34,26 @@
     #cake {
         cursor: pointer;
         width: 40px;
-        height: 40px;
+        height: 40px;;
+    }
+    #cakeBox {
+        position: absolute;
+        top: 0;
+        left: 0px;
     }
     </style>
 </head>
 <body>
-    <div class="pig">
-        <img src="pig.png" id="gate">
-        <div class="face">
-            <img src="mouth1.png" class="droppable" draggable="false">
+    <div class="container">
+        <div class="pig">
+            <img src="pig.png" id="gate">
+            <div class="face">
+                <img src="mouth1.png" class="droppable" draggable="false">
+            </div>
+        </div>
+        <div id="cakeBox">
+            <img src="https://en.js.cx/clipart/ball.svg" id="cake" style="position: absolute; z-index: 1000; left: 0px; top: 0px;" >
         </div>
     </div>
-
-    <img src="https://en.js.cx/clipart/ball.svg" id="cake" style="position: absolute; z-index: 1000; left: 0px; top: 0px;" >
-
-    <button onclick="addCake()">makecake</button>
 </body>
 </html>
